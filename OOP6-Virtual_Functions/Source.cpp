@@ -9,17 +9,17 @@ public:
 
 class DerA : public Base {
 public:
-	void myname() { cout << "This is class DerA" << endl; }
+	void myname() override { cout << "This is class DerA" << endl; }
 };
 
 class DerB : public Base {
 public:
-	void myname() { cout << "This is class DerB" << endl; }
+	void myname() override { cout << "This is class DerB" << endl; }
 };
 
 class DerAB : public DerA, public DerB {
 public:
-	void myname() { cout << "This is class DerAB" << endl; }
+	void myname() override { cout << "This is class DerAB" << endl; }
 };
 
 int main() {
